@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(238, 238, 248);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+body>header{
+    background-color: rgb(32, 27, 63);
+    color: rgb(178, 189, 248);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1100;
+}
+
+header figure{
+    margin: 15px;
+}
+
+header h1{
+    margin: 0;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+
+nav{
+    background-color: rgb(100, 88, 206);
+    color: rgb(15, 8, 82);
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    margin: 0 30px;
+}
+
+nav ul li a{
+    color: rgb(11, 7, 66);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+main{
+    width: 100%;
+    padding: 30px;
+    background-color: white;
+}
+
+
+main section{
+    width: 100%;
+}
+
+main article{
+    margin-bottom: 30px;
+}
+
+main h2{
+    color: rgb(41, 24, 92);
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-family: cursive;
+}
+
+main p{
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+main ul{
+    margin-left: 25px;
+    line-height: 1.8;
+}
+
+
+main figure{
+    float: right;
+    width: 30%;
+    clear: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+main figure img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+main figure figcaption{
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+    margin-top: 5px;
+}
+
+main section{
+    overflow: auto;
+}
+
+footer{
+    clear: both;
+    background-color: rgb(32, 27, 63);
+    color: rgb(178, 189, 248);
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+@media(max-width:768px){
+
+    nav ul{
+        flex-direction: column;
+    }
+
+    main,
+    aside{
+        float: none;
+        width: 100%;
+    }
+
+    aside{
+        min-height: auto;
+    }
+
+}
